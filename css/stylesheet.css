@@ -285,7 +285,7 @@ ul{
 
 @media (max-width: 37.5em) {   /* For phone 37.5em= 600px/16px */
     html {
-        font-size: 31.25%;}
+        font-size: 41.25%;}
         .boxin {
             margin-top: 10rem;
             max-width:50rem;
@@ -293,6 +293,18 @@ ul{
         }
         .comp-nav {
             text-align: center;
+        }
+        .meta {
+            margin: 0;   
+        }
+        .c-nav,
+        .c-nav:link,
+        .c-nav:visited {
+            margin:1rem;
+            font-size: 1.5rem;
+        }
+        .meta-txt {
+            margin: 1.5rem 1rem 1rem 1rem;
         }
         .comp-header {
             flex-direction: column;

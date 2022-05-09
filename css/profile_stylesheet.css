@@ -276,6 +276,18 @@ figure {
     .head-nav {
         text-align: center;
     }
+    .meta {
+        margin: 0;   
+    }
+    .c-nav,
+    .c-nav:link,
+    .c-nav:visited {
+        margin:1rem;
+        font-size: 1.5rem;
+    }
+    .meta-txt {
+        margin: 1.5rem 1rem 1rem 1rem;
+    }
     .box {
         max-width: 70rem;
         display: grid;
