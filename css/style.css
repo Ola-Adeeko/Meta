@@ -257,7 +257,7 @@ ul{
     border-radius: 2rem;
     margin-top: 5rem;
     padding: 2rem 1rem;
-    transition: all 200ms ease;
+    transition: all 0.5s ease;
 }
 .pay-con:hover {
     background-image: linear-gradient(to right top, #b95ce4,#4f29cd);
