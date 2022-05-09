@@ -424,6 +424,15 @@ footer{
     .comp-nav, .comp-header, .comp-sub, .comp-bar {
         text-align: center;
     }
+    .c-nav{
+        margin: 1rem 1rem 1rem 1rem;
+    }
+    .meta {
+        margin: 0;  
+    }
+    .meta-txt {
+        margin:2.5rem 1rem 1rem 1rem;
+    }
     .cp-sub {
         width: 100%;
         margin: 2rem auto;}
