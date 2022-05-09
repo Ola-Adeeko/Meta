@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400&display=swap" rel="stylesheet">
+
+</head>
+<body> 
+    <header>
+        <div class="head-nav">
+            <div class="comp-nav">
+                <ul>
+                    <li class="c-n"><a href="index.html" class="c-nav">Home</a></li>
+                    <li class="c-n"><a href="#" class="c-nav">About</a></li>
+                    <div class="meta">
+                        <h2 class="meta-txt">Meta id</h2>
+                    </div>
+                    <li class="c-n"><a href="#" class="c-nav">Features</a></li>
+                    <li class="c-n"><a href="#" class="c-nav">Contact</a></li>
+                </ul>
+                
+            </div>
+        </div>
+    </header>
+    <div class="boxin">
+        <div class="comp-header">
+            <h1 class="header-title">One Account.</h1>
+            <h1 class="header-title">Unlimited Access</h1>
+        </div>
+        <div class="login-box" >
+            <div class="log-box" id="login">
+                <div class="log-nav align-center">
+                    <p class="nav-tit">Welcome</p>
+                </div>
+                <div class="form-inner">
+                    <form action="" class="form form-login">
+                        <input type="text" placeholder="Email Address" class="form-input u-mb-m" required>
+                        <input type="password" placeholder="Password" class="form-input u-mb-m" required>
+                        <div class="rem-pass u-ml-m">
+                            <input type="checkbox" id="remember-me" >
+                            <label for="remember-me" class="remember-label">Remember me </label>
+                        </div>
+                        <div class="forgot-pass u-mb-l u-ml-m">
+                            <a href="forgotpassword.html" class="forgot-password">forgot password ?</a>
+                        </div>
+                        <div class="align-center">
+                            <a href="user.html" class="p-btn u-mb-m">Sign In</a>
+                        </div>
+                        <div class="log-bar align-center">
+                            <p class="plb-txt signup-link">Don't have an account yet? <a href="#" > register here! </a></p>
+                        </div>
+                        
+                    </form>
+                    <form action="" class="form form-signup">
+                        <input type="text" placeholder="Username" id="username-signup" class="form-input u-mb-m" required>
+                        <input type="text" placeholder="Email Address" id="email-signup" class="form-input u-mb-m" required>
+                        <input type="text" placeholder="Password" id="password-signup" class="form-input u-mb-m" required>
+                                            
+                            
+                        <div class="align-center">
+                            <a href="user.html" class="p-btn u-mb-m" id="signup-submit">Register</a>
+                        </div>
+                        <div class="log-bar align-center">
+                            <p class="plb-txt login-link">Already have an account? <a href="#" > login here! </a></p>
+                        </div>
+                            
+                    </form>
+                </div>
+                
+            </div>
+
+            
+        </div>
+    </div>
+    
+   <script src="script.js"></script> 
+</body>
+</html>

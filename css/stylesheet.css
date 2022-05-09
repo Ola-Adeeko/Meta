@@ -1,0 +1,318 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Karla', sans-serif;
+    background-color: white;
+    background-image: radial-gradient( circle, rgb(100, 82, 209, .5), rgb(100, 82, 209, 1)), url("pexels-alex-knight-2599244.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+html {
+    font-size: 62.5%;
+}
+.head-nav {
+    max-width: 105rem ;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.comp-nav {
+    max-width: 125rem;
+    margin: auto;
+    display:flex;
+    justify-content: center;
+}
+.meta {
+    display: inline-block;  
+    margin: 0 5rem;   
+}
+.meta-txt {
+    text-transform: uppercase;
+    color: #fff;
+    padding:1rem 1rem 1rem 1rem;
+    margin: 1.5rem 3rem 1rem 0;
+}
+.boxin {
+    max-width: 110rem;
+    display: flex;
+    margin: auto;
+    margin-top: 10rem;
+    height: auto;
+}
+.comp-header{
+    margin-top: 10rem;
+    font-size: 4rem;
+    font-weight: 100;
+    color: #fff;    
+}
+.header-title{
+    margin: 1rem 0;
+    
+}
+
+.login-box {
+    width: 40rem;
+    margin: auto;
+    background-color:transparent;
+    position: relative;
+    backface-visibility: hidden;
+}
+.log-box {
+    position: absolute;
+    top: -15rem;
+    width: 40rem; 
+    margin: auto;
+    background-color: rgb(85, 85, 85,.5);
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: all 100ms ;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    backface-visibility: hidden;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes moveinleft{
+    0% {
+        opacity: 0;
+        transform:translateX(-5rem);
+    }
+
+    80% {
+        transform: translateX(2rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+.log-box .form-inner {
+    display: flex;
+    width: 200%;
+}
+.log-box .form-inner form {
+    width: 50%;
+    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form {
+    padding: 3rem 0rem 0rem 0;
+    background-color: rgb(153, 153, 153, .5);
+    width: 40rem;
+  
+    
+}
+.form-input {
+    display: block;
+    width:35rem;
+    padding: 1.2rem 3rem;
+    margin: auto;
+    border-radius: 3rem;
+    border: none;
+    background-color: rgb(255,255,255, .9);
+    border-bottom: 3px solid transparent;
+    font-size: 1.5rem;
+    transition:all 0.4s ease;
+ }
+ .form-input::placeholder {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+ }
+ .form-input:focus{
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+    border-bottom: 3px solid #55c57a  ;
+}
+.form-input:focus:invalid{
+    border-bottom: 3px solid #ff7730;
+}   
+ul{
+    padding: 0px;
+}
+.c-n {
+    display: inline-block;
+}
+.c-nav,
+.c-nav:link,
+.c-nav:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2rem;
+    margin: 1rem 3rem 1rem 0;
+    padding: 1rem 1rem 1rem 1rem;
+    color: #fff;
+    
+}
+.c-nav:hover{
+    background-color: #493B9F;
+    font-weight:900;
+    border-radius: 1rem;
+    transition-property: all;
+    transition-duration: 100ms;
+}
+.p-btn,
+.p-btn:link,
+.p-btn:visited {
+    width: 35rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 1.5rem 7rem;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 3rem;
+    background-color: rgb(255,255,255, .9);
+    color:#6452D1;
+    font-weight: bolder;
+    border:none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition-property: all;
+    transition-duration: .2s;
+}
+    .p-btn:hover{
+        transform: scale(1); 
+        font-weight: 600;
+        background-color: #6452D1;
+        color: #fff;
+    }
+.u-mb-l {
+    margin-bottom: 4.5rem;
+}
+.u-mb-m {
+    margin-bottom: 2rem;
+}
+.u-mb-s {
+    margin-bottom: 1rem;
+}
+.u-ml-m {
+    margin-left: 2rem;
+}
+
+.align-center {
+    text-align: center;
+}
+#remember-me {
+    width: 4rem;
+    height: 1.5rem;
+
+}
+.remember-label {
+    font-size: 1.5rem;
+}
+.rem-pass {
+    display: inline-block;
+    color: #d8d8d8;
+}
+.forgot-pass {
+    display: inline-block;
+    margin-left: 6rem;
+}
+.forgot-password,
+.forgot-password:link,
+.forgot-password:visited {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color:#d8d8d8;
+}
+.plb-txt {
+    font-size: 1.5rem;
+}
+.log-bar {
+    margin-top: 0rem;
+    padding: 2rem 5rem;
+    border-top: solid 1px black;
+    background-color: #fff;
+}
+.log-nav {
+    padding: 2rem 5rem;
+    background-color: #fff;
+}
+.nav-tit {
+    font-size: 2rem;
+    text-transform: capitalize;
+    color:#493B9F;
+    font-weight: 600;
+}
+
+/*  MEDIA QUERIES */
+
+@media (max-width: 75em) {  /* For Tab-land  75em= 1200px/16px */
+    html {
+        font-size: 56.25%;} 
+     }  /* 1rem = 9px; 9px/16 = 56.25% */
+
+@media (max-width: 56.25em) {   /* For Tab-port  56.25em= 900px/16px */
+    html {
+        font-size: 50%;} 
+    body{
+        padding: 0; }
+    
+    .boxin {
+        margin-top: 0;
+        max-width:50rem;
+        flex-wrap: wrap;
+    }
+    .comp-header {
+        flex-direction: column;
+        margin-top: 0;
+        width: 100%;
+        display: block;
+    }
+    .login-box {
+        flex-direction: column;
+        width: 100%;
+        display: block;
+    }
+    .log-box{
+        top: 0;
+    }
+    
+    }      /* 1rem = 8px; 8px/16 = 50% */
+
+@media (max-width: 37.5em) {   /* For phone 37.5em= 600px/16px */
+    html {
+        font-size: 31.25%;}
+        .boxin {
+            margin-top: 10rem;
+            max-width:50rem;
+            flex-wrap: wrap;
+        }
+        .comp-nav {
+            text-align: center;
+        }
+        .comp-header {
+            flex-direction: column;
+            margin-top: 0;
+            width: 0%;
+            display:none;
+        }
+        .login-box {
+            flex-direction: column;
+            width: 100%;
+            display: inline-block;
+            margin:0 auto;
+        }
+        .log-box{
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }      /* 1rem = 4px; 5px/16 = 31.25% */
+
+@media (min-width: 112.5em) {   /* For big-desktop 112.5em= 1800px/16px */
+    html {
+        font-size: 75%;}  }      /* 1rem = 12px; 12px/16 = 75% */
+
