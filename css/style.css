@@ -1,4 +1,7 @@
-
+* {
+    margin: 0;
+    padding: 0;
+}
 body{
     font-family: 'Karla', sans-serif;
     background-color: white;
@@ -80,7 +83,7 @@ ul{
     font-size: 2rem;
     text-decoration: none;
     display: inline-block;
-    margin: 1rem 3rem 1rem 0;
+    margin: 1rem 3rem 1rem -1.8rem;
     padding: 1rem 2rem 1rem 2rem;
     transition-duration: 200ms;    
     transition-property: all;
@@ -192,6 +195,7 @@ ul{
     .p-btn:hover{
         transform: scale(1.1); 
         font-weight: 600;
+        
     }
 .place{
     max-width: 110rem;
@@ -247,11 +251,28 @@ ul{
 }
 .pay-con{
     width:25rem ;
+    height:42rem;
     text-align: center;
     box-shadow: 0 .4rem .8rem 0 rgba(0, 0, 0, 0.2), 0 .6rem 2rem 0 rgba(0, 0, 0, 0.19);
     border-radius: 2rem;
     margin-top: 5rem;
     padding: 2rem 1rem;
+    transition: all 200ms ease;
+}
+.pay-con:hover {
+    background-image: linear-gradient(to right top, #b95ce4,#4f29cd);
+    transform: translateY(-2rem); 
+    color: #fff;
+   
+}
+.payment .pay-con:hover a {
+    background: #ff568f;
+}
+.payment .pay-con:hover .pc-amt {
+    color : #fff
+}
+.payment .pay-con:hover .pc-mth {
+    color : #fff
 }
 .pc-tit{
     font-size:2.5rem ;
@@ -266,18 +287,20 @@ ul{
     font-size: 1.5rem;
     color: #888888;
 }
-.register{
+.register_box {
     background-color: #6452D1;
-    max-width:110rem;
+    width:100%;
     margin: auto;
     margin-top: 10rem;
     padding-top: 10rem;
     padding-bottom: 10rem;
-    border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;
+}
+.register{
+    max-width: 114rem;
+    margin:auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content:center;
+    justify-content:space-around;
     align-items: center;
 }
 .reg-img{
@@ -289,7 +312,9 @@ ul{
 }
 .reg-content{
     max-width: 35rem;
-    color:white
+    color:white;
+    margin-left:-10rem;
+
 }
 .regt{
     font-size: 3rem;
@@ -317,16 +342,16 @@ ul{
     color: #DBDBDB;    
 }
 footer{
-    max-width:110rem ;
+    width:100% ;
     margin:auto;
     background-color: #493B9F;
-    border-bottom-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;
     color: #888888;
 }
 .footer-nav{
+    max-width: 114rem;
+    margin: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;  
     padding-top: 2rem;  
     padding-bottom: 2rem;
@@ -349,6 +374,15 @@ footer{
     color: white;
     margin: 0;
     padding-bottom: 1rem;
+}
+.u-mt-m {
+    margin-top: 2.5rem;
+}
+.u-mt-l {
+    margin-top: 6rem;
+}
+.u-mb-m {
+    margin-bottom: 2.5rem;
 }
 
 /*  MEDIA QUERIES */
